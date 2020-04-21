@@ -31,6 +31,8 @@ aa83988848 薗田光太郎
 一方，母集団の平均の推定値は，標本の平均<img src="/k01/tex/33717a96ef162d4ca3780ca7d161f7ad.svg?invert_in_darkmode&sanitize=true" align=middle width=9.39498779999999pt height=18.666631500000015pt/>が最良である．
 
 ## ソースコードの説明
-
+l.52 Nまでの平均を求める
+l.62 N-1までの平均の2乗を求める
+l.63 分散を求める
 ## 修正履歴
 
