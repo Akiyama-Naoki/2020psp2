@@ -35,6 +35,23 @@ aa83988848 薗田光太郎
 l.53 Nまでの平均を求める
 l.60 分散を求める
 
+## 入出力結果
+
+```
+input the filename of sample:../sample/heights_male.csv
+the filename of sample: ../sample/heights_male.csv
+sample mean：
+sample variance：
+population mean (estimated)：
+population variance (estimated)：
+```
+
 ## 修正履歴
 
-説明は「かきくけこ」だ！
+[comment #20200429]
+- レポートに実行結果を載せる項を追加しました．実際に動かしたときの入出力の様子をコピペして載せてください．
+- ざっと見た感じですが，(k01.c#L32)で`ave_square = ave_online(val*val,ave,n);`の引数に`ave`ではマズいのではないでしょうか．
+- (k01.c#L34)で更新し終えた`ave`と`ave_square`を使うのはマズいのではないでしょうか．
+- (k01.c#L53)や(k01.c#L56)で int/int　の演算箇所がありますが，この箇所の結果もintになってしまい，マズいです．
+- 実行結果として何も表示されないようです．標本平均や標本分散や，母集団平均（推定値）や母集団分散（推定値）を表示してください．
+
