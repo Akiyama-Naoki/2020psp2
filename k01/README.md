@@ -32,8 +32,10 @@ aa83988848 薗田光太郎
 
 ## ソースコードの説明
 
-l.53 Nまでの平均を求める
-l.60 分散を求める
+l.35 nまでの母集団の分散を求める
+l.36 nまでの2乗の平均を求める
+l.60 nまでの平均を求める
+l.67 nまでの分散を求める
 
 ## 入出力結果
 
@@ -45,7 +47,10 @@ sample variance：
 population mean (estimated)：
 population variance (estimated)：
 ```
-
+sample mean:173.89
+sample variance:25.36
+population mean (estimated):173.89
+population variance (estimated):28.98
 ## 修正履歴
 
 [comment #20200429]
