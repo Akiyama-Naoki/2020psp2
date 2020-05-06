@@ -42,15 +42,12 @@ l.67 nまでの分散を求める
 ```
 input the filename of sample:../sample/heights_male.csv
 the filename of sample: ../sample/heights_male.csv
-sample mean：
-sample variance：
-population mean (estimated)：
-population variance (estimated)：
-```
 sample mean:173.89
 sample variance:25.36
 population mean (estimated):173.89
 population variance (estimated):28.98
+
+```
 ## 修正履歴
 
 [comment #20200429]
@@ -60,3 +57,5 @@ population variance (estimated):28.98
 - (k01.c#L53)や(k01.c#L56)で int/int　の演算箇所がありますが，この箇所の結果もintになってしまい，マズいです．
 - 実行結果として何も表示されないようです．標本平均や標本分散や，母集団平均（推定値）や母集団分散（推定値）を表示してください．
 
+[comment #20200506]
+- OKです．少しだけコードにコメントつけていますが軽微です．
