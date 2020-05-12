@@ -7,12 +7,16 @@ extern double p_stdnorm(double z);
 
 int main(void)
 {
-    double val;
+    double val,z_A,z_B,ave_A,ave_B,var_A,var_B;
     char fname[FILENAME_MAX];
     char buf[256];
     FILE* fp;
-    double L1=1,L2=1;
-
+    double L_A=1,L_B=1;
+    ave_A = 170.8;
+    ave_B = 169.7;
+    var_A = 5.43;
+    var_B = 5.5;
+    
     printf("input the filename of sample:");
     fgets(fname,sizeof(fname),stdin);
     fname[strlen(fname)-1] = '\0';
@@ -26,8 +30,10 @@ int main(void)
 
     while(fgets(buf,sizeof(buf),fp) != NULL){
         sscanf(buf,"%lf",&val);
-
-
+        z_A = (val - ave_A) / var_A;
+        z_B = (val - ave_B) / var_B;
+        L_A *= p_stdnorm(z_A);
+        L_B *= p_stdnorm(z_B);
     
 
 
@@ -39,8 +45,8 @@ int main(void)
         exit(EXIT_FAILURE);
     }
 
-    printf("L_A: %f\n",max_val);
-    printf("L_B: %f\n",min_val);
+    printf("likelihood for A: %f\n",L_A);
+    printf("likelihood for B: %f\n",L_B);
 
     return 0;
 
@@ -51,4 +57,3 @@ double p_stdnorm(double z)
 {
     return 1/sqrt(2*M_PI) * exp(-z*z/2);
 }
-
