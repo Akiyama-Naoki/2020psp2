@@ -2,20 +2,21 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
+#define ave_A 170.8
+#define ave_B 169.7
+#define var_A 5.43
+#define var_B 5.5
 
 extern double p_stdnorm(double z);
 
 int main(void)
 {
-    double val,z_A,z_B,ave_A,ave_B,var_A,var_B;
+    double val,z_A,z_B;
     char fname[FILENAME_MAX];
     char buf[256];
     FILE* fp;
     double L_A=1,L_B=1;
-    ave_A = 170.8;
-    ave_B = 169.7;
-    var_A = 5.43;
-    var_B = 5.5;
+    
     
     printf("input the filename of sample:");
     fgets(fname,sizeof(fname),stdin);
