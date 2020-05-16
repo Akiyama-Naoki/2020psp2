@@ -38,7 +38,6 @@ int main(void)
     
 
 
-
     }
 
     if(fclose(fp) == EOF){
