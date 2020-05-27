@@ -31,13 +31,12 @@ int main(int argc, char* argv[])
     printf("============================================\n");
 
     srand(RAND_SEED);
-    #ifdef CONST_SEED
+
     for(i=0;i<num_dummy;i++){
         /* r_stdnormを使って，1人のデータを捏造 */
-        dummy = mu + r_stdnorm();
+        dummy = r_stdnorm() * sigma + mu;
         printf("%5.2lf\n",dummy);
     }
-    #endif
 
     return EXIT_SUCCESS;
 }
