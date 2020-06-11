@@ -54,3 +54,5 @@ No data
 
 ## 修正履歴
 
+[comment #20200611 moto]
+- OKです。
