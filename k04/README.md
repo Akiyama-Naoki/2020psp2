@@ -56,3 +56,6 @@ No data
 
 [comment #20200611 moto]
 - OKです。
+
+[comment #20200624 kotaro]
+- 課題4完了確認しました（薗田）
