@@ -70,3 +70,6 @@ population variance (estimated):28.98
 
 [comment #20200506]
 - OKです．少しだけコードにコメントつけていますが軽微です．
+
+[comment #20200624 kotaro]
+- 課題1完了確認しました（薗田）
